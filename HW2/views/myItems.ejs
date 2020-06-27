@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title><%= title.title %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_items.css">
+</head>
+<body>
+
+    <% include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+
+  <main>
+
+      <p> Visitors' guide<br><br><br> </p>
+      <table>
+        <tr>
+          <th>Attraction</th>
+          <th>Category</th>
+          <th>My Rating</th>
+          <th>Visited</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td><a href="/categories/item/1"> &#9788; Rock Beach </a></td>
+          <td>Sightseeing</td>
+          <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+          <td>&#9989;</td>
+          <td>
+            <a class="btn" href="/categories/item/1">Update</a>
+            <a class="btn" href="/myItems">Delete</a>
+          </td>
+        </tr>
+        <tr>
+           <td><a href="/categories/item/5"> Para Sailing </a></td>
+           <td>Adventure</td>
+           <td>&#9733;&#9733;&#9733;</td>
+           <td></td>
+           <td>
+             <a class="btn" href="/categories/item/5">Update</a>
+             <a class="btn" href="/myItems">Delete</a>
+           </td>
+         </tr>
+
+       </table>
+       <p class = "down"><b>&#9788;</b> Indicates that the corresponding experience has been added by you.<br>
+       Click <a href="/myItems">here</a> to share a new experience
+       </p>
+  </main>
+
+    <% include ./partials/footer.ejs %>
+
+</body>
+</html>

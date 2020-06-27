@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+footer, header, main, nav, div {
+  display: block;
+}
+
+html, body, h1, ul, li, center, footer, header, main, nav, div {
+  padding: 0;
+  margin: 0;
+}
+
+.banner li{
+  list-style-type: none;
+  float: right;
+  font-size: 20%;
+}
+
+.banner img {
+  float: left;
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.banner h1{
+  font-size: 35px;
+}
+.banner-wrapper {
+	height: 60px;
+	line-height: 60px;
+	display: block;
+	margin: 0 auto;
+	width: 349px;
+	color: #fff;
+}
+.btn-img-wrapper {
+	width: 200px;
+	float: left;
+}
+.btn-img-wrapper .btn {
+    float: none;
+    clear: both;
+    padding: 0 17px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 29%;
+    font-size: 13px;
+}
+.banner {
+	background-color: #708090;
+	padding: 10px 0;
+  position: relative;
+}
+
+.banner h6 {
+	position: absolute;
+	text-align: left;
+	right: 20px;
+  font-style: italic;
+	top: 30px;
+	margin: 0 !important;
+	font-size: 14px;
+	color: #fff;
+}
+
+.main-page-desc {
+	clear: both;
+  padding: 20px 0 0 0;
+}
+.main-page-desc ul {
+	list-style: none;
+}
+.main-page-content {
+	float: left;
+	margin: 0 0 0 10px;
+}
+.banner{
+  background-color:#708090;
+}
+
+.user_spec {
+	background-color: #778899;
+	text-align: center;
+	padding: 15px 0;
+	border: 2px solid #333;
+	margin: 5px 0;
+}
+
+.user_spec a{
+  color: white;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+
+body {
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DCDCDC;
+  font-family:sans-serif, Arial, Helvetica;
+  font-size: 15px;
+  border: groove;
+}
+
+nav {
+	background-color: #808080;
+	width: 130px;
+	height: 450px;
+	float: left;
+	margin-bottom: 5px;
+	border: 2px solid #333;
+	font-size: 20px;
+}
+
+nav a{
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:grid;
+
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+main {
+	float: left;
+	width: calc(100% - 160px);
+	height: auto;
+  padding: 0 0 0 10px;
+}
+main img {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+}
+h4, h5, h6 {
+  margin: 10px 0;
+}
+main h6 {
+	font-size: 14px;
+	margin: 0 0 10px 0px;
+}
+
+.btn {
+  background: #808080;
+  border: 2px solid #333;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #333;
+  padding: 0 2px;
+  transition: 0.15s ease-in-out all 0s;
+}
+.btn:hover {
+  background: #999;
+  color: #fff;
+  transition: 0.15s ease-in-out all 0s;
+}
+
+main ul{
+  text-align: left;
+}
+
+main li{
+  font-size: 15px;
+  position: relative;
+}
+
+footer{
+  clear: both;
+  background-color: #A9A9A9;
+  border: 1px solid;
+}
+
+.banner li{
+  list-style-type: none;
+  float: right;
+  font-size: 20%;
+}
+
+.banner img {
+  float: left;
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.banner h1{
+  font-size: 35px;
+}
+.banner-wrapper {
+	height: 60px;
+	line-height: 60px;
+	display: block;
+	margin: 0 auto;
+	width: 349px;
+	color: #fff;
+}
+
+.banner h6 {
+	position: absolute;
+	text-align: left;
+	right: 20px;
+  font-style: italic;
+	top: 30px;
+	margin: 0 !important;
+	font-size: 14px;
+	color: #fff;
+}
+
+.banner {
+	background-color: #708090;
+	padding: 10px 0;
+  position: relative;
+}
+
+.banner{
+  background-color:#708090;
+}
+
+.user_spec {
+	background-color: #778899;
+	text-align: center;
+	padding: 15px 0;
+	border: 2px solid #333;
+	margin: 5px 0;
+}
+
+.user_spec a{
+  color: white;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+
+body {
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DCDCDC;
+  font-family:sans-serif, Arial, Helvetica;
+  font-size: 15px;
+  border: groove;
+}
+
+nav {
+	background-color: #808080;
+	width: 130px;
+	height: 450px;
+	float: left;
+	margin-bottom: 5px;
+	border: 2px solid #333;
+	font-size: 20px;
+}
+
+nav a{
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:grid;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+main {
+	float: left;
+	width: calc(100% - 160px);
+	height: auto;
+  padding: 0 0 0 10px;
+}
+
+footer{
+  clear: both;
+  background-color: #A9A9A9;
+  border: 1px solid;
+}
+
+.inactive {
+  cursor: not-allowed;
+}
+
+select{
+  background-color:  #808080;
+  padding: 2px 2px 5px 2px;
+  width: 50px;
+}

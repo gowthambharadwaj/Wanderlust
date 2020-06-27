@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.itemName %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_beaches.css">
+</head>
+<body>
+
+    <%include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+
+  <main>
+    <ul class="inline">
+      <li><a href="/index">Home</a></li>
+      <li><a href="/categories">Categories</a></li>
+      <li><%= data.itemName %></li>
+    </ul>
+    <br>
+    <div class="btn-img-wrapper">
+      <img src="<%= data.imageURL%>" alt="Rock Beach">
+      <%console.log('Image:'+data.imageURL)%>
+      <a class="btn" href="/myItems">&#9829; Save It</a>
+      <a class="btn" href="/feedback">&#174; Rate It</a>
+      <a class="btn" href="/categories">Categories</a>
+    </div>
+    <div class="main-page-content">
+      <h4> <%= data.itemName %> </h4>
+      <h5> <%= data.catalogCategory %> <br><br> <%= data.rating %></h5>
+    </div>
+    <div class="main-page-desc">
+      <p> <%= data.description %> </p>
+    </div>
+  </main>
+
+  <% include ./partials/footer.ejs %>
+
+</body>
+</html>

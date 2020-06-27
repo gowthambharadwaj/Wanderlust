@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title><%= title.title %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_feedback.css">
+</head>
+<body>
+
+    <%include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+
+  <main>
+    <h6>Give your feedback for</h6>
+    <div class="btn-img-wrapper">
+      <img src="/images/Rock_Beach.jpg" alt="Rock Beach">
+      <a class="btn" href="/feedback">&#9829; Confirm Rating</a>
+      <a class="btn" href="/feedback">&#174; I Made It</a><br><br>
+      <select>
+        <option class="btn" value="1">1</option>
+        <option class="btn" value="2">2</option>
+        <option class="btn" value="3">3</option>
+        <option class="btn" value="4">4</option>
+        <option class="btn" value="5">5</option>
+      </select>
+    </div>
+    <div class="main-page-content">
+      <h4>Rock Beach, Pondicherry</h4>
+      <h5>Beaches</h5>
+    </div>
+    <div class="main-page-desc">
+      <p>The Rock Beach located in the east coast of India in pondicherry. It has a very scenic beauty. The beach is located along the White Town in the national territory.</p>
+    </div>
+  </main>
+
+  <% include ./partials/footer.ejs %>
+
+</body>
+</html>
