@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.item[0].itemName %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_beaches.css">
+</head>
+<body>
+
+    <%include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+
+  <main>
+    <ul class="inline">
+      <li><a href="/">Home</a></li>
+      <li><a href="/categories">Categories</a></li>
+      <li><%=data.item[0].itemName%></li>
+    </ul>
+    <br>
+    <div class="btn-img-wrapper">
+      <img src="<%= data.item[0].getimageURL%>" alt="<%= data.item[0].itemName%>">
+      <%console.log('Image:'+data.imageURL)%>
+      <a class="btn" href="/categories/item/saveit/<%=data.item[0].itemCode%>">&#9829; Save It</a>
+      <a class="btn" href="/feedback/<%=data.item[0].itemCode%>">&#174; Rate It</a>
+      <a class="btn" href="/categories">Categories</a>
+    </div>
+    <div class="main-page-content">
+      <h4> <%= data.item[0].itemName%> </h4>
+      <h5> <%= data.item[0].catalogCategory%> <br><br> <%= data.item[0].rating%></h5>
+    </div>
+    <div class="main-page-desc">
+      <p> <%= data.item[0].description%> </p>
+    </div>
+  </main>
+
+  <% include ./partials/footer.ejs %>
+
+</body>
+</html>

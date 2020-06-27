@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_feedback.css">
+</head>
+<body>
+
+    <%include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+
+  <main>
+    <h6>Give your feedback for</h6>
+    <div class="btn-img-wrapper">
+      <img src="<%= data.item[0].getimageURL%>"alt="<%=data.item[0].itemName%>">
+      <form class="madeIt" action="/feedback/update/<%=data.item[0].itemCode%>" method="post">
+      <input type="hidden" name="feedbackHidden" value="madeIt">
+      <input type="hidden" name="itemCode" value="<%= data.item[0].itemCode%>">
+      <input type="hidden" name="itemList" value="<%= data.item[0].itemCode%>">
+      <div class="form-check-form-check-inline">
+          <input class="form-check-input" type="radio" name="madeItRadio" value="true" >
+                    <div class="form-check-form-check-inline">
+                    <label class="form-check-label" for="madeIt1">True</label>
+                    </div>
+                    <div class="form-check-form-check-inline">
+                        <input class="form-check-input" type="radio" name="madeItRadio" value="false">
+                        <label class="form-check-label" for="madeIt2">False</label>
+                    </div>
+                    <div class="form-check-form-check-inline">
+                        <button type="submit" class="btn btn-primary main-content-div">Made It</button>
+                    </div>
+                  </div>
+    </form>
+      <form class="form-check-form-check-inline" action="/feedback/update/<%=data.item[0].itemCode%>" method="post">
+        <input type="hidden" name="feedbackHidden" value="rating">
+        <input type="hidden" name="itemCode" value="<%= data.item[0].itemCode%>">
+        <input type="hidden" name="itemList" value="<%= data.item[0].itemCode%>">
+        <select name="rating" value="rating" id="ele">
+          <option class="btn" value="1">1</option>
+          <option class="btn" value="2">2</option>
+          <option class="btn" value="3">3</option>
+          <option class="btn" value="4">4</option>
+          <option class="btn" value="5">5</option>
+        </select>&nbsp;&nbsp;&nbsp;<br><br>
+        <button type="submit">Confirm Rating</button>
+      </form>
+    </div>
+    <div class="main-page-content">
+      <h4> <%=data.item[0].itemName%> </h4>
+      <h5> <%=data.item[0].catalogCategory%> <br><br> <%= data.item[0].rating%> </h5>
+    </div>
+    <div class="main-page-desc">
+      <p> <%=data.item[0].description%> </p>
+    </div>
+  </main>
+
+  <% include ./partials/footer.ejs %>
+
+</body>
+</html>

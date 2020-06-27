@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <title>Categories</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style_categories.css">
+</head>
+<body>
+
+    <% include ./partials/header.ejs %>
+    <% include ./partials/navigation.ejs %>
+    <% include ./partials/site-navigation.ejs %>
+<main>
+  <div>
+    <%
+    console.log("Categories:"+data.categories[0]);
+    for(var i=0;i<data.categories.length;i++){ %>
+        <table class="categoriestable">
+            <thead>
+
+                <tr>
+                    <th class="categoriesheading"><%=data.categories[i]%></th>
+                </tr>
+            </thead>
+            <tbody>
+                <%
+                for(var j=0;j<data.items.length;j++){
+                    if(data.categories[i] === data.items[j].catalogCategory){ %>
+                    <tr>
+                        <td class="categoriesitems"><a href="/categories/item/<%= data.items[j].itemCode %>"><%= data.items[j].itemName %></a></td>
+                    </tr>
+                   <% }
+                }
+                 %>
+            </tbody>
+        </table>
+        <% }%>
+</div>
+</main>
+
+  <% include ./partials/footer.ejs %>
+
+</body>
+</html>
