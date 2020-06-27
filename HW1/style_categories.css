@@ -1,0 +1,151 @@
+
+footer, header, main, nav, div {
+  display: block;
+}
+
+html, body, h1, ul, li, center, footer, header, main, nav, div {
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+
+main {
+	float: left;
+	width: calc(100% - 160px);
+  min-height: 90px;
+  padding: 0 0 0 20px;
+}
+main h5 {
+  margin: 0 0 20px 0;
+}
+.item-lister li {
+	margin: 0 0 15px 0;
+	list-style: disc;
+	padding: 0 0 0 0px;
+}
+.item-lister {
+  padding: 0 0 0 30px;
+}
+.custom-font {
+  font-size: 15px;
+}
+
+footer{
+  clear: both;
+  background-color: #A9A9A9;
+  border: 1px solid;
+}
+
+.banner li{
+  list-style-type: none;
+  float: right;
+  font-size: 20%;
+}
+
+.banner img {
+  float: left;
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.banner h1{
+  font-size: 35px;
+}
+.banner-wrapper {
+	height: 60px;
+	line-height: 60px;
+	display: block;
+	margin: 0 auto;
+	width: 349px;
+	color: #fff;
+}
+
+.banner h6 {
+	position: absolute;
+	text-align: left;
+	right: 20px;
+  font-style: italic;
+	top: 30px;
+	margin: 0 !important;
+	font-size: 14px;
+	color: #fff;
+}
+
+.banner {
+	background-color: #708090;
+	padding: 10px 0;
+  position: relative;
+}
+
+.banner{
+  background-color:#708090;
+}
+
+.user_spec {
+	background-color: #778899;
+	text-align: center;
+	padding: 15px 0;
+	border: 2px solid #333;
+	margin: 5px 0;
+}
+
+.user_spec a{
+  color: white;
+  padding: 5% 5%;
+  text-decoration: none;
+}
+
+body {
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DCDCDC;
+  font-family:sans-serif, Arial, Helvetica;
+  font-size: 15px;
+  border: groove;
+}
+
+nav {
+	background-color: #808080;
+	width: 130px;
+	height: 450px;
+	float: left;
+	margin-bottom: 5px;
+	border: 2px solid #333;
+	font-size: 20px;
+}
+
+nav a{
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display:grid;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+main {
+	float: left;
+	width: calc(100% - 160px);
+	height: auto;
+  padding: 0 0 0 10px;
+}
+
+footer{
+  clear: both;
+  background-color: #A9A9A9;
+  border: 1px solid;
+}
+
+.inactive {
+  cursor: not-allowed;
+}
